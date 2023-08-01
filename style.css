@@ -1,0 +1,486 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container-2 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+}
+.text-main {
+  font-size: 1.8rem;
+}
+
+.text-main-h2 {
+  font-size: 2.8rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.2rem;
+}
+.margin-bottom-md {
+  margin-bottom: 2.4rem;
+}
+/* Modal Window */
+
+.hidden {
+  display: none;
+}
+
+.opacity-none {
+  opacity: 0;
+  transition: all 1s;
+}
+.opacity-all {
+  opacity: 1;
+}
+
+.modal {
+  position: absolute;
+  width: 35%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 6.4rem 3.2rem;
+  border-radius: 1rem;
+}
+.modal-close {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  font-size: 3.2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-content {
+}
+
+.modal-background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3));
+  z-index: 10;
+}
+
+.modal-part {
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+}
+
+.modal-text {
+  font-size: 1.4rem;
+}
+
+.modal-input {
+  padding: 1.25rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.modal-sign-up {
+  font-family: inherit;
+  padding: 1.25rem 1rem;
+  background-image: linear-gradient(
+    90deg,
+    #84ffc9,
+    #aab2ff,
+    rgb(236, 160, 255)
+  );
+}
+
+.modal-sign-up:hover,
+.modal-sign-up:active {
+  background-image: linear-gradient(
+    90deg,
+    rgb(132, 255, 201, 0.8),
+    rgb(168, 177, 255, 0.8),
+    rgb(236, 160, 255, 0.8)
+  );
+}
+
+.modal-last {
+  margin-bottom: 3.2rem;
+}
+
+.modal-input,
+.modal-sign-up {
+  width: 100%;
+  border-radius: 1rem;
+  border-width: 0.1rem;
+}
+
+.modal-error {
+  background-color: rgba(241, 129, 129, 0.8);
+  padding: 1rem;
+  margin-bottom: 3.2rem;
+}
+
+/* Navigation */
+
+.nav-bar {
+  display: flex;
+  padding: 3rem 4rem;
+  justify-content: space-between;
+  background-image: linear-gradient(90deg, #84ffc9, #aab2ff, #eca0ff);
+}
+
+.welcome {
+  font-size: 2.4rem;
+}
+
+.form-login {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.login {
+  padding: 1.5rem 1rem;
+  border-radius: 10rem;
+  text-align: center;
+  font-family: inherit;
+
+  border: none;
+  background-color: #eee;
+}
+
+.login--btn {
+  border: none;
+  background: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.pre-hero {
+  background-color: #eee;
+  padding-bottom: 21.8rem;
+}
+
+.hero {
+  background-image: linear-gradient(90deg, #84ffc9, #aab2ff, #eca0ff);
+}
+
+.hero--main {
+  padding-top: 6.4rem;
+  padding-bottom: 12.8rem;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: 6.4rem;
+}
+
+.hero--left {
+  align-self: center;
+}
+
+.hero--text-h2 {
+  font-size: 3.4rem;
+  margin-bottom: 4.4rem;
+}
+
+.hero--text-p {
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.hero--sign {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 3rem;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #111;
+}
+
+.hero--sign:hover,
+.hero--sign:active {
+  background-color: #eee;
+}
+
+/* App */
+
+.app {
+  /* opacity: 0; */
+  background-color: #eee;
+  /* transition: all 3s ease; */
+  padding-bottom: 12.8rem;
+}
+
+.app-input {
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.app-intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.4rem;
+}
+.app-balance {
+  font-size: 3.8rem;
+}
+
+.movements {
+  height: 40rem;
+}
+
+.movements-stats {
+  /* background-color: #ddd; */
+  /* border: solid 0.1rem red; */
+  margin-bottom: 6.4rem;
+}
+
+.movements-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+.movement-outside {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  padding: 1.5rem 2.5rem;
+}
+.movements-balance {
+  color: #999;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.movements-nums {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/* Transfer Only  */
+.transfer-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+}
+
+.app-operation label {
+  text-align: center;
+}
+
+.transfer-user,
+.transfer-amount {
+  background-color: #b5ffdf;
+}
+
+.transfer-grid label {
+  font-size: 1.2rem;
+}
+
+/* Request Only */
+.request-grid {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem 1rem;
+}
+.request-input {
+  background-color: #f0b3ff;
+}
+
+.request-grid label {
+  grid-row: 2;
+  font-size: 1.2rem;
+}
+.request-limit p {
+  background-color: rgba(231, 216, 233, 0.8);
+  padding: 0.5rem 1rem;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.request-error p {
+  background-color: rgba(241, 129, 129, 0.8);
+  padding: 0.5rem 1rem;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+/* Movements & Display */
+
+.app-movements {
+  display: grid;
+  gap: 3.4rem;
+  grid-template-columns: 65fr 35fr;
+}
+
+.movements {
+  overflow: scroll;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.movement-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.movement-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.25rem 4rem;
+  border-bottom: solid 0.1rem #ddd;
+}
+
+.movement-deposit {
+  background-color: lime;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.movement-withdrawl {
+  background-color: red;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.app-operation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2.4rem;
+}
+
+/* All Operations */
+.operation {
+  border-radius: 2rem;
+  padding: 3.5rem 4.5rem;
+}
+
+.operation--transfer {
+  background-image: linear-gradient(#84ffc9, #5cb38d);
+}
+.operation--request {
+  background-image: linear-gradient(#eca0ff, #a570b3);
+}
+
+.operation-flex {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+
+.operation-p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+}
+
+.operation-button {
+  border: none;
+  font-size: 2.4rem;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 0 2rem;
+  border-radius: 1rem;
+
+  cursor: pointer;
+}
+
+.operation-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #222;
+}
+
+/* Transfer Only  */
+.transfer-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+}
+
+.app-operation label {
+  text-align: center;
+}
+
+.transfer-input {
+  background-color: #b5ffdf;
+}
+
+.transfer-error p {
+  margin-top: 1.6rem;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(241, 129, 129, 0.8);
+}
+
+/* Movements Info */
+
+.app-action-info {
+  background-color: white;
+  height: 40rem;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-display {
+  background-image: linear-gradient(#aab2ff, #ccd1ff);
+  text-align: center;
+  color: #444;
+  font-size: 1.8rem;
+  padding: 2rem 4rem;
+  border-bottom: #c4c9ff 0.5rem solid;
+}
+
+.action-item {
+  background-color: #ddd;
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid #bbb;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+}
